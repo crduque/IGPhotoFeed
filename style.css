@@ -1,76 +1,60 @@
 body {
-    background-color: gray;
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
 }
-.title {
-    display: flex;
-    justify-content: center;
-    background: white;
-    margin-bottom: 4%;
-    padding: 1%;
+input {
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;    
 }
-.title-text {
-    width: 450px;
-}
-.title h1{
-    margin: 0;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-.post {
-    align-self: center;
+.postcard {
     background-color: white;
-    width: 450px;
-    height: fit-content;
-    margin-bottom: 4%;
-    border-radius: 2px;
+    width: 500px;
+    height: 350px;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
 }
-.post-header {
-    display: flex;
-    height: 10%;
+.postcard-header {
+    overflow: hidden;
 }
-.post-header .logo {
-    width: 10%;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.postcard-header img {
+    max-width: 60px;
+    float: right;
 }
-.post-header .user {
-    width: 80%;
-    line-height: 4px; 
+.postcard h1 {
+    margin: 0px;
+    font-size: 44px;
 }
-.post-header .user :first-child {
-    font-weight: bold;
+.postcard-body {
+    overflow: hidden;
 }
-.post-header .options {
-    font-size: 30px;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
+.body-left {
+    float: left;
+    width: 50%;
 }
-.post-image img {
-    width: 100%;
+.body-right {
+    float: right;
+    width: 45%;
 }
-.post-icons {
-    font-size: 30px;
-    display: flex;
-    margin: 3%;
-    justify-content: space-between;
+.body-right input {
+    display: block;
+    border-width: 0px 0px 1px 0px;
+    padding-top: 10px;
+    margin-top: 10px;
+    width: 90% ;
 }
-.post-icons .icons-right {
-    margin-right: 4%;
+.postcard-footer {
+    padding: 20px;
+    text-align: center;
 }
-p span {
-    font-weight: bold;
-}
-.post-footer > p {
-    margin: 3%;
-    margin-bottom: 4%;
+.postcard-footer input[type=submit] {
+    padding: 5px;
+    border-width: 0px 0px 1px 0px;
+    border-color: gray;
+    background: lightgrey;
+    color: black;
 }
