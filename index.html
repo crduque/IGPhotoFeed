@@ -9,27 +9,23 @@
     <title>My Postcard</title>
 </head>
 <body>
-    <section>
-        <div class="main-content">
-            <form class="postcard">
-                <div class="postcard-header">
-                    <img src="http://assets.breatheco.de/apis/img/icon/4geeks.png" alt="4Geeks logo">
-                    <h1>My Postcard</h1>
+    <section class="postcard">
+        <div class="postcard-header">
+            <h1>My Postcard</h1>
+            <img src="http://assets.breatheco.de/apis/img/icon/4geeks.png" alt="4Geeks logo">
+        </div>
+        <div class="postcard-main-content">
+            <div class="main-left">
+                <p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
+                <p>This is so fun! I cant wait start doing more stuff.</p>
+            </div>
+            <form class="main-right">
+                <div class="text-inputs">
+                    <input type="text" placeholder="Name ">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Some coments">
                 </div>
-                <div class="postcard-body">
-                    <div class="body-left">
-                        <p>Look how awesome! This is a postcard that I created using HTML5 and CSS3 during my 4Geeks Academy Course!</p>
-                        <p>This is so fun! I cant wait start doing more stuff.</p>
-                    </div>
-                    <div class="body-right">
-                        <input type="text" placeholder="Name ">
-                        <input type="text" placeholder="Email">
-                        <input type="text" placeholder="Some coments">
-                    </div>
-                </div>
-                <div class="postcard-footer">
-                    <input type="submit" value="Send my Postcard">
-                </div>
+                <input class="send-button" type="submit" value="Send my Postcard">
             </form>
         </div>
     </section>
