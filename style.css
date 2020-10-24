@@ -1,60 +1,63 @@
 body {
+    margin: 0;
+    padding: 0;
     background-color: black;
-    font-family: 'Open Sans Condensed';
-    font-size: 18px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 input {
     font-family: 'Open Sans Condensed';
-    font-size: 18px;    
+    font-size: 18px;
 }
 .postcard {
     background-color: white;
     width: 500px;
     height: 350px;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     padding: 15px;
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;    
 }
 .postcard-header {
-    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
 }
 .postcard-header img {
     max-width: 60px;
-    float: right;
+    margin-right: 15px;
 }
 .postcard h1 {
     margin: 0px;
     font-size: 44px;
 }
-.postcard-body {
-    overflow: hidden;
+.postcard-main-content{
+    display: flex;
 }
-.body-left {
-    float: left;
+.main-left{
     width: 50%;
+    padding-right: 2%;
 }
-.body-right {
-    float: right;
-    width: 45%;
+.main-right{
+    width: 50%;
+    margin-left: 3%;
+    display: flex;
+    flex-flow: column nowrap;
 }
-.body-right input {
+.main-right input {
     display: block;
     border-width: 0px 0px 1px 0px;
     padding-top: 10px;
     margin-top: 10px;
     width: 90% ;
 }
-.postcard-footer {
-    padding: 20px;
-    text-align: center;
-}
-.postcard-footer input[type=submit] {
+.main-right input[type=submit] {
     padding: 5px;
     border-width: 0px 0px 1px 0px;
     border-color: gray;
     background: lightgrey;
     color: black;
+    margin-top: 45px;
+    margin-left: -120px;
 }
